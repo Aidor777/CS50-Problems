@@ -1,0 +1,1 @@
+select count(distinct movie_id) from ratings where rating = 10.0;
