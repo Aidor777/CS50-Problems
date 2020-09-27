@@ -1,0 +1,137 @@
+body
+{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    text-align: center;
+    background-color: rgb(70, 24, 222);
+    color: white;
+    min-height: 60px;
+}
+
+nav
+{
+    text-align: right;
+    padding-right: 5%;
+    padding-left: 50%;
+    min-height: 30px;
+    background-color: #dddddd;
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li
+{
+    display: inline;
+    text-align: center;
+    flex: 1 1 0;
+    min-height: 30px;
+}
+
+nav li:hover
+{
+    background-color: rgb(255, 123, 0);
+}
+
+nav li:hover a
+{
+    color: white;
+}
+
+nav li a
+{
+    color: rgb(255, 123, 0);
+}
+
+nav li a:hover
+{
+    color: rgb(70, 24, 222);
+}
+
+nav .current-page
+{
+    background-color: rgb(255, 123, 0);
+    color: white;
+}
+
+nav .current-page a
+{
+    color: white;
+}
+
+.main-content
+{
+    display: flex;
+}
+
+section
+{
+    flex: 4 1 0;
+    display: flex;
+}
+
+.card
+{
+    width: 33%;
+    height: 33%;
+}
+
+.card-text
+{
+    text-align: justify;
+}
+
+.btn-primary
+{
+    border-color: rgb(255, 123, 0);
+    background-color: rgb(255, 123, 0);
+}
+
+.btn-primary:hover
+{
+    border-color: rgb(70, 24, 222);
+    background-color: rgb(70, 24, 222);
+}
+
+article
+{
+    flex: 3.5 1 0;
+    text-align: justify;
+    padding: 10px;
+}
+
+aside
+{
+    flex: 1 1 0;
+    padding-top: 10px;
+}
+
+aside ul
+{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+footer
+{
+    background-color: rgb(70, 24, 222);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    min-height: 40px;
+    margin-top: auto;
+}

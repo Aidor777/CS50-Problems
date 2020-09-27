@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="shortcut icon" href="resources/malaysia-flag.png"/>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage: Pseudo travel blog</title>
+    </head>
+    <body>
+        <header><h1>Malaysia</h1></header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current-page"><a href="malaysia.html">Malaysia</a></li>
+                <li><a href="myanmar.html">Myanmar</a></li>
+                <li><a href="vietnam.html">Vietnam</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <article>
+                <h2>About Malaysia</h2>
+                <p>Malaysia is a country in Southeast Asia, located partly on a peninsula of the Asian mainland and partly on the northern third of the island of Borneo.</p>
+                <p>West (peninsular) Malaysia shares a border with Thailand, is connected by a causeway and a bridge (the 'second link') to the island state of Singapore, and has coastlines on the South China Sea and the Straits of Malacca. East Malaysia (Borneo) shares borders with Brunei and Indonesia.</p>
+                <p>Malaysia is a mix of the modern world and a developing nation. With its investment in the high technology industries and moderate oil wealth, it has become one of the richest nations in Southeast Asia. Malaysia, for most visitors, presents a happy mix: there is high-tech infrastructure and things generally work well and more or less on schedule, but prices remain more reasonable than, say, Singapore.</p>
+
+                <form onSubmit="processRating()">
+                    <div class="form-group">
+                        <label for="rating">And you, what did you think of Malaysia ?</label>
+                        <input type="range" class="form-control-range" id="rating">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Rate Malaysia !</button>
+                </form>
+            </article>
+
+            <aside>
+                <strong>Visit some other awesome blogs !</strong>
+                <ul>
+                    <li><a href="https://www.nomadicmatt.com/">Nomadic Matt</a></li>
+                    <li><a href="https://www.lonelyplanet.fr/">Lonely Planet</a></li>
+                    <li><a href="https://www.routard.com/">Guide du routard</a></li>
+                    <li><a href="https://expertvagabond.com/">Expert Vagabond</a></li>
+                    <li><a href="https://www.notesfromtheroad.com/">Notes from the Road</a></li>
+                    <li><a href="https://www.wanderingearl.com/">Wandering Earl</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <footer>This website does not use cookies ! Copyright @garing</footer>
+
+        <!-- Optional JavaScript for Bootstrap -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <!-- Custom JavaScript-->
+        <script src="homepage.js"></script>
+    </body>
+</html>
