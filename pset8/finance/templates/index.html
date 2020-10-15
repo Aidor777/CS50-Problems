@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Name</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for stock in stocks %}
+            <tr>
+                <td>{{ stock.stock_symbol }}</td>
+                <td>{{ stock.stock_name }}</td>
+                <td>{{ stock.count }}</td>
+                <td>{{ stock.stock_price|usd }}</td>
+                <td>{{ stock.total|usd }}</td>
+            </tr>
+        {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ balance|usd }}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td><b>{{ total|usd }}</b></td>
+            </tr>
+        </tfoot>
+    </table>
+    <form action="/moreCash" method="post" class="form-inline" style="justify-content: center;">
+        <div class="form-group mx-sm-3">
+            <input autocomplete="off" class="form-control" name="cash" placeholder="Amount" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Get more cash !</button>
+    </form>
+{% endblock %}
